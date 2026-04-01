@@ -1,0 +1,35 @@
+{
+  "name": "belajar-vibe-coding",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx watch src/index.ts",
+    "db:push": "drizzle-kit push:mysql"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zamhariAhmad/belajar-vibe-coding.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zamhariAhmad/belajar-vibe-coding/issues"
+  },
+  "homepage": "https://github.com/zamhariAhmad/belajar-vibe-coding#readme",
+  "description": "",
+  "dependencies": {
+    "@elysiajs/node": "^1.4.5",
+    "drizzle-orm": "^0.45.2",
+    "elysia": "^1.4.28",
+    "mysql2": "^3.20.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "drizzle-kit": "^0.31.10",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
+  }
+}
