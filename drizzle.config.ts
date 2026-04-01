@@ -1,10 +1,13 @@
-import type { Config } from "drizzle-kit";
+import { defineConfig } from "drizzle-kit";
 
-export default {
-  schema: "./src/db/schema.ts",
+export default defineConfig({
   out: "./drizzle",
-  driver: "mysql2",
+  schema: "./src/db/schema.ts",
+  dialect: "mysql",
   dbCredentials: {
-    uri: process.env.DATABASE_URL || "mysql://root@127.0.0.1:3306/acoba",
+    host: "localhost",
+    user: "root",
+    password: "",
+    database: "acoba",
   },
-} satisfies Config;
+});
